@@ -6,6 +6,6 @@
     }
   },
   "rewrites": [
-    { "source": "/(.+)", "destination": "/api" }
+    { "source": "/i/:hash", "destination": "/api/:hash*" }
   ]
 }

@@ -1,0 +1,109 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+
+html,
+body {
+  background-color: white;
+  line-height: 1;
+  font-weight: 400;
+  font-family: Times, "Times New Roman", Nimbus Roman, ui-serif, Georgia,
+    Cambria, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1 {
+  margin: 0;
+  color: white;
+  font-weight: 100;
+  font-size: 8rem;
+}
+
+h2 {
+  margin: 0;
+  color: white;
+  font-size: 3rem;
+  font-weight: 100;
+}
+
+body {
+  position: absolute;
+  width: 1200px;
+  height: 630px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: flex;
+}
+
+.purple {
+  color: rgba(149, 122, 251);
+}
+
+.space-x-4 > :not([hidden]) ~ :not([hidden]) {
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+
+.img {
+  background-position: center center;
+  background-size: cover;
+  background-color: rgb(204, 204, 204);
+  background-repeat: no-repeat;
+}
+
+.img.lg {
+  width: 500px;
+  height: 500px;
+}
+
+.img.sm {
+  width: 180px;
+  height: 180px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.profile .header {
+  margin-left: -6rem;
+  margin-top: 2.5rem;
+  width: fit-content;
+}
+
+.profile .header .text-bg {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  width: fit-content;
+  background-color: rgba(31, 41, 55, 0.75);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+.profile .header .text-bg.sm {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+}
+
+.profile .header .subtitle {
+  display: flex;
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+.profile .gallery {
+  display: flex;
+}

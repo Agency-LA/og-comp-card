@@ -1,6 +1,7 @@
 .now
 .vercel
 node_modules
-api/dist
+dist
+.vscode
 public/dist
 
