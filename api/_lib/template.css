@@ -12,8 +12,7 @@ body {
   background-color: white;
   line-height: 1;
   font-weight: 400;
-  font-family: Times, "Times New Roman", Nimbus Roman, ui-serif, Georgia,
-    Cambria, serif;
+  font-family: Times, "Times New Roman", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,6 +22,7 @@ h1 {
   color: white;
   font-weight: 100;
   font-size: 14rem;
+  font-family: Times, "Times New Roman", serif;
 }
 
 h2 {
@@ -30,6 +30,7 @@ h2 {
   color: white;
   font-size: 5rem;
   font-weight: 100;
+  font-family: Times, "Times New Roman", serif;
 }
 
 body {

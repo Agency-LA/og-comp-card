@@ -24,6 +24,7 @@ export async function getScreenshot(
   const page = await getPage(isDev)
   await page.setViewport({ width: 2400, height: 1260 })
   await page.setContent(html)
+  await page.waitForNetworkIdle({ idleTime: 250 })
   const file = await page.screenshot({ type })
   return file
 }
