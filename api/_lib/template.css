@@ -22,20 +22,19 @@ h1 {
   margin: 0;
   color: white;
   font-weight: 100;
-  font-size: 8rem;
+  font-size: 14rem;
 }
 
 h2 {
   margin: 0;
   color: white;
-  font-size: 3rem;
+  font-size: 5rem;
   font-weight: 100;
 }
 
 body {
-  position: absolute;
-  width: 1200px;
-  height: 630px;
+  width: 100vw;
+  height: 100vh;
   display: flex;
   text-align: center;
   align-items: center;
@@ -43,6 +42,7 @@ body {
 }
 
 .container {
+  position: absolute;
   display: flex;
 }
 
@@ -63,13 +63,13 @@ body {
 }
 
 .img.lg {
-  width: 500px;
-  height: 500px;
+  width: 850px;
+  height: 850px;
 }
 
 .img.sm {
-  width: 180px;
-  height: 180px;
+  width: 400px;
+  height: 400px;
 }
 
 .profile {
@@ -79,7 +79,7 @@ body {
 }
 
 .profile .header {
-  margin-left: -6rem;
+  margin-left: -9rem;
   margin-top: 2.5rem;
   width: fit-content;
 }
@@ -101,7 +101,7 @@ body {
 .profile .header .subtitle {
   display: flex;
   margin-top: 1rem;
-  margin-left: 1rem;
+  margin-left: 2rem;
 }
 
 .profile .gallery {

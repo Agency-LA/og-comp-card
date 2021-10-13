@@ -12,7 +12,6 @@ export function getHtml(parsedReq: ParsedRequest) {
 <html>
     <meta charset="utf-8">
     <title>Comp Card</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         ${css}
     </style>
