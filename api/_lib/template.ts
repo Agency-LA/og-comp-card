@@ -1,17 +1,28 @@
-import { readFileSync } from 'fs'
+import { readFileSync } from "fs";
 
-const css = readFileSync(`${__dirname}/template.css`).toString('utf8')
+const css = readFileSync(`${__dirname}/template.css`).toString("utf8");
+const times = readFileSync(`${__dirname}/../_fonts/times.ttf`).toString(
+  "base64"
+);
 
-export type ParsedRequest = [string, number, string, string[]]
+export type ParsedRequest = [string, number, string, string[]];
 
 export function getHtml(parsedReq: ParsedRequest) {
-  const [alias, age, location, photos] = parsedReq
+  const [alias, age, location, photos] = parsedReq;
 
   return `
 <!DOCTYPE html>
 <html>
     <meta charset="utf-8">
     <title>Comp Card</title>
+    <style>
+        @font-face {
+            font-family: Times;
+            font-style:  normal;
+            font-weight: normal;
+            src: url(data:font/ttf;charset=utf-8;base64,${times}) format('truetype');
+        }
+    </style>
     <style>
         ${css}
     </style>
@@ -47,10 +58,10 @@ export function getHtml(parsedReq: ParsedRequest) {
                         (img) =>
                           `<div class="img sm" style="background-image: url('${img}');"></div>`
                       )
-                      .join('')}
+                      .join("")}
                 </div>
             </div>
         </div>
     </body>
-</html>`
+</html>`;
 }
