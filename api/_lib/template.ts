@@ -51,7 +51,7 @@ export function getHtml(parsedReq: ParsedRequest) {
 
                 </div>
 
-                <div class="gallery">
+                <div class="gallery space-x-4">
                     ${photos
                       .slice(1)
                       .map(
