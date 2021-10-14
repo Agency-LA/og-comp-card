@@ -107,4 +107,5 @@ body {
 
 .profile .gallery {
   display: flex;
+  justify-content: space-between;
 }
