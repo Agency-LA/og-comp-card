@@ -1,4 +1,5 @@
 import chrome from 'chrome-aws-lambda'
+
 const exePath =
   process.platform === 'win32'
     ? 'C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe'
@@ -11,6 +12,8 @@ interface Options {
   executablePath: string
   headless: boolean
 }
+// --enable-font-antialiasing
+// --font-render-hinting=none
 
 export async function getOptions(isDev: boolean) {
   let options: Options
