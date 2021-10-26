@@ -26,6 +26,8 @@ export async function getScreenshot(
   await page.setContent(html, { waitUntil: "networkidle0" });
   // https://github.com/puppeteer/puppeteer/issues/422#issuecomment-708142856
   await page.evaluateHandle("document.fonts.ready");
+  // and for good measure, wait a sec... (it still wasn't always working with above fix :/)
+  await page.waitForTimeout(1000);
   const file = await page.screenshot({ type });
   return file;
 }
