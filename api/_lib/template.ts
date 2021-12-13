@@ -1,9 +1,8 @@
 import { readFileSync } from "fs";
 
 const css = readFileSync(`${__dirname}/template.css`).toString("utf8");
-const times = readFileSync(`${__dirname}/../_fonts/times.ttf`).toString(
-  "base64"
-);
+const cormorant = readFileSync(`${__dirname}/../_fonts/Cormorant-Regular.woff`).toString("base64");
+const avenirNext = readFileSync(`${__dirname}/../_fonts/AvenirNext-Regular.woff`).toString("base64");
 
 export type ParsedRequest = [string, number, string, string[]];
 
@@ -17,13 +16,18 @@ export function getHtml(parsedReq: ParsedRequest) {
     <title>Comp Card</title>
     <style>
         @font-face {
-            font-family: Times;
-            font-style:  normal;
+            font-family: 'Cormorant';
+            font-style: normal;
             font-weight: normal;
-            src: url(data:font/ttf;charset=utf-8;base64,${times}) format('truetype');
+            src: url(data:font/ttf;charset=utf-8;base64,${cormorant}) format('woff2');
         }
-    </style>
-    <style>
+        @font-face {
+            font-family: 'Avenir Next';
+            font-style: normal;
+            font-weight: normal;
+            src: url(data:font/ttf;charset=utf-8;base64,${avenirNext}) format('woff2');
+        }
+
         ${css}
     </style>
     <body>

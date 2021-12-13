@@ -5,7 +5,7 @@ import { getScreenshot } from './_lib/chromium'
 import { getHtml, ParsedRequest } from './_lib/template'
 
 const FALLBACK_OG_IMAGE =
-  'https://uploads-ssl.webflow.com/60f1dac8e2e57dfb3224242c/61186719883bea9eebb2a074_og_preview.jpg'
+  "https://res.cloudinary.com/agency-la/image/upload/v1639429081/assets/61186719883bea9eebb2a074_og_preview_dvgs2c.jpg";
 
 const fileType: 'png' | 'jpeg' = 'jpeg'
 const isDev = !process.env.AWS_REGION

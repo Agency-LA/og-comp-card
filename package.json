@@ -9,7 +9,7 @@
   "dependencies": {
     "@types/urlsafe-base64": "1.0.28",
     "chrome-aws-lambda": "^10.0.0",
-    "puppeteer-core": "^10.4.0",
+    "puppeteer-core": "^13.0.0",
     "urlsafe-base64": "^1.0.0"
   },
   "devDependencies": {
